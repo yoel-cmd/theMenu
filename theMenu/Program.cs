@@ -15,7 +15,41 @@ namespace theMenu
             {
                 Console.WriteLine(item);
             }
+        } 
+        
+        static void PrintArrayReversOrder(int[] num)
+        {
+            for (int i = num.Length-1; i >= 0; i--)
+            {
+                Console.WriteLine(num[i]); 
+            }
         }
+
+        static int[] sortArr(int[] num)
+        {
+            int temp = 0;
+            for (int i = 0; i < num.Length; i++)
+            {
+                for (int j = 0; j < num.Length - 1 - i; j++)
+                {
+                    if (num[j] > num[j + 1])
+                    {
+                        temp = num[j];
+                        num[j] = num[j +1];
+                        num[j +1] = temp;
+                    }
+                }
+            }
+            return num;
+        }
+        
+          static void printMaxItem(int[] sortArryNum)
+        {
+
+            Console.WriteLine(sortArryNum[sortArryNum.Length-1]); 
+        }
+
+
 
 
 
