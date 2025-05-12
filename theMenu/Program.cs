@@ -9,7 +9,9 @@ namespace theMenu
     internal class Program
     {
 
-        static void PrintArrayInOrder(int[] num)
+
+        // הדפסה בסדר כניסה
+        static void PrintArrayInOrder(double[] num)
         {
             foreach (var item in num)
             {
@@ -17,7 +19,9 @@ namespace theMenu
             }
         } 
         
-        static void PrintArrayReversOrder(int[] num)
+
+        //פונקצייה להדפסה הפוך
+        static void PrintArrayReversOrder(double[] num)
         {
             for (int i = num.Length-1; i >= 0; i--)
             {
@@ -25,9 +29,11 @@ namespace theMenu
             }
         }
 
-        static int[] sortArr(int[] num)
+
+        //פונקצייה למיון מערך
+        static double[] sortArr(double[] num)
         {
-            int temp = 0;
+            double temp = 0;
             for (int i = 0; i < num.Length; i++)
             {
                 for (int j = 0; j < num.Length - 1 - i; j++)
@@ -43,10 +49,19 @@ namespace theMenu
             return num;
         }
         
-          static void printMaxItem(int[] sortArryNum)
+
+        // פונקצייה שמקבלת מערך ממוין ומוציאה את הראשון 
+          static void printMaxItem(double[] sortArryNum)
         {
 
             Console.WriteLine(sortArryNum[sortArryNum.Length-1]); 
+        }
+        
+        // פונקצייה שמקבלת מערך ממוין ומוציאה את האחרון 
+          static void printMinItem(double[] sortArryNum)
+        {
+
+            Console.WriteLine(sortArryNum[0]); 
         }
 
 
@@ -54,11 +69,12 @@ namespace theMenu
 
 
 
-
+        // בדיקה של קליטת בחירה מהמשתמש 
         static void coise()
         {
+            // לשנות את המערך לduble כי רק ככה אני יכול לבדוק שהוא מספר - ולדאוג שיכניס את זה עם רווחים
             Console.WriteLine("Enter your coise - To enter a series, press 1 to display, press 2 to display in reverse order, press 3 to display in sorted order, press 4 to display the highest number, press 5 to display the smallest number, press 6 to display the average, press 7 to display the number of elements, press 8 to display the sum of the series, press 9 to exit, press 10 ");
-            int num = Convert.ToInt32(Console.ReadLine());
+            double num = Convert.ToInt32(Console.ReadLine());
 
             switch (num)
             {
@@ -100,7 +116,7 @@ namespace theMenu
         }
 
 
-
+        // main
         static void Main(string[] args)
         {
             Console.WriteLine( " new branch");
