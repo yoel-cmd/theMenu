@@ -9,6 +9,18 @@ namespace theMenu
     internal class Program
     {
 
+        static void PrintArrayInOrder(int[] num)
+        {
+            foreach (var item in num)
+            {
+                Console.WriteLine(item);
+            }
+        }
+
+
+
+
+
         static void coise()
         {
             Console.WriteLine("Enter your coise - To enter a series, press 1 to display, press 2 to display in reverse order, press 3 to display in sorted order, press 4 to display the highest number, press 5 to display the smallest number, press 6 to display the average, press 7 to display the number of elements, press 8 to display the sum of the series, press 9 to exit, press 10 ");
@@ -51,10 +63,9 @@ namespace theMenu
                     break;
             }
 
-
-
-
         }
+
+
 
         static void Main(string[] args)
         {
