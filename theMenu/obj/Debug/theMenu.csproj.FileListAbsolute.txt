@@ -1,0 +1,7 @@
+C:\Users\yoeli\source\repos\theMenu\theMenu\bin\Debug\theMenu.exe.config
+C:\Users\yoeli\source\repos\theMenu\theMenu\bin\Debug\theMenu.exe
+C:\Users\yoeli\source\repos\theMenu\theMenu\bin\Debug\theMenu.pdb
+C:\Users\yoeli\source\repos\theMenu\theMenu\obj\Debug\theMenu.csproj.AssemblyReference.cache
+C:\Users\yoeli\source\repos\theMenu\theMenu\obj\Debug\theMenu.csproj.CoreCompileInputs.cache
+C:\Users\yoeli\source\repos\theMenu\theMenu\obj\Debug\theMenu.exe
+C:\Users\yoeli\source\repos\theMenu\theMenu\obj\Debug\theMenu.pdb
